@@ -10,7 +10,7 @@ class App(ChromaDB_VectorStore, Groq_Class):
         Groq_Class.__init__(self)
 
 app_instance = App()
-app_instance.connect_to_postgres(host='localhost', dbname='indexer', user='postgres', password='Sarthak@123', port='5432')
+app_instance.connect_to_postgres(host='localhost', dbname='indexer', user='postgres', password='your_password', port='5432')
 
 @app.route('/', methods=['GET'])
 def welcome():
